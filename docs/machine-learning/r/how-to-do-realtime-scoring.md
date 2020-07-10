@@ -61,7 +61,7 @@ CLR 和 C++ 擴充功能的重要性就是與資料庫引擎本身的鄰近程�
 
 為了提高詐騙偵測之類案例的評分速度，SQL Server 新增內建的評分程式庫作為 C++ 和 CLR 擴充功能，以消除 R 和 Python 啟動處理序的額外負荷。
 
-[**即時評分**](../real-time-scoring.md)是第一個適用於高效能評分的解決方案。 在 SQL Server 2017 的早期版本和 SQL Server 2016 的較新更新中引進的即時評分會依賴 CLR 程式庫，以代表 R 和 Python 在 RevoScaleR、MicrosoftML (R)、revoscalepy 和 microsoftml (Python) 中，透過 Mcrosoft 控制的函式進行處理。 CLR 程式庫會使用 **sp_rxPredict** 預存程序來叫用，以從任何支援的模型類型產生分數，而不需呼叫 R 或 Python 執行階段。
+[**即時評分**](../real-time-scoring.md)是第一個適用於高效能評分的解決方案。 在 SQL Server 2017 的早期版本和 SQL Server 2016 的較新更新中引進的即時評分會依賴 CLR 程式庫，以代表 R 和 Python 在 RevoScaleR、MicrosoftML (R)、revoscalepy 和 microsoftml (Python) 中，透過 Microsoft 控制的函式進行處理。 CLR 程式庫會使用 **sp_rxPredict** 預存程序來叫用，以從任何支援的模型類型產生分數，而不需呼叫 R 或 Python 執行階段。
 
 [**原生評分**](../sql-native-scoring.md)是一個 SQL Server 2017 功能，會實作為原生 C++ 程式庫，但僅適用於 RevoScaleR 和 revoscalepy 模型。 這是最快速且更安全的方法，但支援與其他方法相關的較小型功能集。
 
